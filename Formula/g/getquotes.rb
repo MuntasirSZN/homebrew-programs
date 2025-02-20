@@ -1,4 +1,4 @@
-class GetQuotes < Formula
+class Getquotes < Formula
   desc "Terminal tool for fetching quotes from WikiQuotes"
   homepage "https://github.com/MuntasirSZN/getquotes"
   version "0.3.5"
