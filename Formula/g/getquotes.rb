@@ -39,3 +39,4 @@ class GetQuotes < Formula
     system bin / 'getquotes'
   end
 end
+
