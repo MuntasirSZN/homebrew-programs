@@ -1,27 +1,26 @@
 class Getquotes < Formula
   desc "Terminal tool for fetching quotes from WikiQuotes"
   homepage "https://github.com/MuntasirSZN/getquotes"
-  version "0.3.5"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/MuntasirSZN/getquotes/releases/download/v#{version}/getquotes-aarch64-apple-darwin.tar.gz"
+      url "https://github.com/MuntasirSZN/getquotes/releases/download/v0.3.5/getquotes-aarch64-apple-darwin.tar.gz"
       sha256 "0595ca90aa3a640cb4cfe017560c70ef90d1d339bdf86802960c36b56a6c6928"
     end
     on_intel do
-      url "https://github.com/MuntasirSZN/getquotes/releases/download/v#{version}/getquotes-x86_64-apple-darwin.tar.gz"
+      url "https://github.com/MuntasirSZN/getquotes/releases/download/v0.3.5/getquotes-x86_64-apple-darwin.tar.gz"
       sha256 "434d27a0318f2e546b0fa9502e4b3aa2df0b97c153e2bd23b07d6b8e3550a61a"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/MuntasirSZN/getquotes/releases/download/v#{version}/getquotes-aarch64-unknown-linux-gnu.tar.gz"
+      url "https://github.com/MuntasirSZN/getquotes/releases/download/v0.3.5/getquotes-aarch64-unknown-linux-gnu.tar.gz"
       sha256 "b9e022e064e3d3c031d8f7304d2811975a9d5285a688d83d534c6223177a2a39"
     end
     on_intel do
-      url "https://github.com/MuntasirSZN/getquotes/releases/download/v#{version}/getquotes-x86_64-unknown-linux-gnu.tar.gz"
+      url "https://github.com/MuntasirSZN/getquotes/releases/download/v0.3.5/getquotes-x86_64-unknown-linux-gnu.tar.gz"
       sha256 "47aae21eaef2d699b9f0cdcae441e947b6ba0ab4128205c25f577b2ab40a4bf8"
     end
   end
