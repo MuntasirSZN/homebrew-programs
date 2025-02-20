@@ -28,7 +28,6 @@ class Getquotes < Formula
   def install
     bin.install "getquotes"
     man1.install "man/getquotes.1"
-    prefix.install "LICENSE" => "share/licenses/getquotes/LICENSE"
   end
 
   test do
