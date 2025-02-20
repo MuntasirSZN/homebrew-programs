@@ -7,18 +7,24 @@ jobs:
   json:
     runs-on: macos-latest
     steps:
-    - uses: actions/checkout@v4
+      - uses: actions/checkout@v4  # Updated to v4
 
-    - name: brew info --json
-      run: |
-        rm -rf Info
-        mkdir -p Info
-        cd Formula
-        for formula in *.rb; do
-          brew info --json "$formula" | jq '.[0]? // .' > ../Info/${formula/%rb/json}
-        done
+      - name: brew info --json
+        run: |
+          rm -rf Info
+          mkdir -p Info
+          cd Formula
+          find . -type f -name "*.rb" | while read -r formula; do
+            # Remove leading './' from the formula path
+            formula="${formula#./}"
+            # Create a nested directory structure in Info
+            output_dir="../Info/$(dirname "$formula")"
+            mkdir -p "$output_dir"
+            # Generate JSON and save it in the appropriate directory
+            brew info --json "$formula" | jq '.[0]? // .' > "../Info/${formula/%rb/json}"
+          done
 
-    - uses: stefanzweifel/git-auto-commit-action@v4.1.1
-      with:
-        commit_message: 'Generated formula JSON: `brew info --json <formula>`'
-        file_pattern: Info
+      - uses: stefanzweifel/git-auto-commit-action@v4.1.1
+        with:
+          commit_message: 'Generated formula JSON: `brew info --json <formula>`'
+          file_pattern: Info
