@@ -1,8 +1,8 @@
 class Getquotes < Formula
   desc "Terminal tool for fetching quotes from WikiQuotes"
   homepage "https://github.com/MuntasirSZN/getquotes"
-  license "MIT"
   version "0.3.5"
+  license "MIT"
 
   on_macos do
     on_arm do
