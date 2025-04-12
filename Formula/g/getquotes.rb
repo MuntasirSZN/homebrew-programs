@@ -1,5 +1,5 @@
 class Getquotes < Formula
-  desc "GetQuotes is a simple cli tool to get quotes in your terminal using WikiQuotes, Written In Rust"
+  desc "A simple cli tool to get quotes in your terminal using WikiQuotes"
   homepage "https://github.com/MuntasirSZN/getquotes"
   license "MIT"
 
@@ -28,6 +28,9 @@ class Getquotes < Formula
   def install
     bin.install "getquotes"
     man1.install "man/getquotes.1"
+    bash_completion.install "completions/getquotes.bash"
+    zsh_completion.install "completions/_getquotes"
+    fish_completion.install "completions/getquotes.fish"
   end
 
   test do
