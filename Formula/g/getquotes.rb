@@ -1,5 +1,5 @@
 class Getquotes < Formula
-  desc "Terminal tool for fetching quotes from WikiQuotes"
+  desc "GetQuotes is a simple cli tool to get quotes in your terminal using WikiQuotes, Written In Rust"
   homepage "https://github.com/MuntasirSZN/getquotes"
   license "MIT"
 
