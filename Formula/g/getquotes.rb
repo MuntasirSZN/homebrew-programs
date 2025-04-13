@@ -5,23 +5,23 @@ class Getquotes < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/MuntasirSZN/getquotes/releases/download/v0.3.7/getquotes-aarch64-apple-darwin.tar.gz"
-      sha256 "f41cd91f7826d3443387dffea220e580e6e6af9d0cf30f7a2e0552942f011042"
+      url "https://github.com/MuntasirSZN/getquotes/releases/download/v0.4.0/getquotes-aarch64-apple-darwin.tar.gz"
+      sha256 "3f2f94025c47cbc5bb48da1b91fc4d2434834d405a849bc30ec5b7c57cf07492"
     end
     on_intel do
-      url "https://github.com/MuntasirSZN/getquotes/releases/download/v0.3.7/getquotes-x86_64-apple-darwin.tar.gz"
-      sha256 "a1fd6dee1633c16e2ea04738d2be4e421436d47f9ee00ad0002da863376c657c"
+      url "https://github.com/MuntasirSZN/getquotes/releases/download/v0.4.0/getquotes-x86_64-apple-darwin.tar.gz"
+      sha256 "0eef63d0206effa11eb6335255a0806cc30fe70a29e606e20685f1ef59efbd75"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/MuntasirSZN/getquotes/releases/download/v0.3.7/getquotes-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "eeda68ee04a1ca848c7600ff37ac23a5dbd26bf64cd0084c18d6e57ebd90cd22"
+      url "https://github.com/MuntasirSZN/getquotes/releases/download/v0.4.0/getquotes-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "78f6cea6e227fad6c4ab93aa1d09a59ed4ad33725b2432b562edf20bdbd831d5"
     end
     on_intel do
-      url "https://github.com/MuntasirSZN/getquotes/releases/download/v0.3.7/getquotes-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "167a8e5c7db8058c1b9bb0e7c765077885ad3c7f3394c4625aac827d600bc629"
+      url "https://github.com/MuntasirSZN/getquotes/releases/download/v0.4.0/getquotes-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "e5e53650f682607bbe634a6528cabe4f9eeece675b32c8624881750ed66d4196"
     end
   end
 
