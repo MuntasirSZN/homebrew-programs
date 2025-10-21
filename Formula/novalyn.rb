@@ -1,25 +1,25 @@
 class Novalyn < Formula
-  desc "💅 Beautiful Changelogs using Conventional Commits"
+  desc "Beautiful Changelogs using Conventional Commits"
   homepage "https://github.com/nanodelabs/novalyn"
-  version "0.1.0"
+  version "0.1.1"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/nanodelabs/novalyn/releases/download/novalyn-v0.1.0/novalyn-aarch64-apple-darwin.tar.gz"
-      sha256 "c754b9d2ddd7ec3881d88ad9b88c6471dda854eceddab600301d45be80a893f4"
+      url "https://github.com/nanodelabs/novalyn/releases/download/v0.1.1/novalyn-aarch64-apple-darwin.tar.gz"
+      sha256 "1574d5829cf6aeb95f3c4c6f947b99296b04ca0d1a65395d5d9a434f7fbc3826"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/nanodelabs/novalyn/releases/download/novalyn-v0.1.0/novalyn-x86_64-apple-darwin.tar.gz"
-      sha256 "98daadf2dc443bd40245c774bd5bd4f4e3834e149b842a0f37a0eec01628b628"
+      url "https://github.com/nanodelabs/novalyn/releases/download/v0.1.1/novalyn-x86_64-apple-darwin.tar.gz"
+      sha256 "18257073f8a87595bdfb60244f1ef8f4b087579f49d95141f593e86b5b43aded"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/nanodelabs/novalyn/releases/download/novalyn-v0.1.0/novalyn-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "135617864968ab0395ccb6f143be4dfb78f692ca2d3dfd35faad2543676f518e"
+      url "https://github.com/nanodelabs/novalyn/releases/download/v0.1.1/novalyn-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "e76c65043c3faabc16122690e0cbcd83accf4055838da504d95d061100057a59"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/nanodelabs/novalyn/releases/download/novalyn-v0.1.0/novalyn-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "a69332c8df3f34b9c54f6de5ceb8b54a4810ad1e7ca8c542ec077025be5cd382"
+      url "https://github.com/nanodelabs/novalyn/releases/download/v0.1.1/novalyn-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "1b287183b715eb353dd4d824d36d7e0dc7c2e5b83091271690412d514353c678"
     end
   end
   license "MIT"
