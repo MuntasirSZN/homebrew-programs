@@ -38,3 +38,5 @@ jobs:
         with:
           commit_message: 'Generated formula JSON: `brew info --json <formula>`'
           file_pattern: Info
+          branch: ${{ github.ref_name }}
+          push_options: '--set-upstream origin ${{ github.ref_name }}'
