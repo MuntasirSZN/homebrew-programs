@@ -1,4 +1,4 @@
-# MuntasirSZN Programs
+# Homebrew Programs of Muntasir
 
 ## How do I install these formulae?
 
