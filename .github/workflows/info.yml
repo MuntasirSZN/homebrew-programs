@@ -7,7 +7,7 @@ jobs:
   json:
     runs-on: macos-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
 
       # 1. Add this step to set up Homebrew and symlink your repository as a tap
       - name: Set up Homebrew
