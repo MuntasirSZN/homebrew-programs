@@ -18,6 +18,7 @@ jobs:
 
       - name: brew info --json
         run: |
+          brew tap MuntasirSZN/programs
           rm -rf Info
           mkdir -p Info
           cd Formula
