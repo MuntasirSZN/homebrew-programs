@@ -12,11 +12,9 @@ jobs:
       contents: write
 
     steps:
-      - uses: actions/checkout@v4
-
-      - name: Set up Homebrew
-        id: set-up-homebrew
-        uses: Homebrew/actions/setup-homebrew@master
+      - uses: actions/checkout@v6
+        with:
+           ref: ${{ github.head_ref }}
 
       - name: brew info --json
         run: |
@@ -32,13 +30,6 @@ jobs:
             brew info --json "MuntasirSZN/programs/$formula_name" | jq '.[0]? // .' > "../Info/${formula/%rb/json}"
           done
 
-      # 2. Restore Git authentication that Homebrew stripped away
-      - name: Restore Git connection
-        run: git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git
-
       - uses: stefanzweifel/git-auto-commit-action@v7
         with:
           commit_message: 'Generated formula JSON: `brew info --json <formula>`'
-          file_pattern: Info
-          branch: main
-          push_options: '--set-upstream origin main'
