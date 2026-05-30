@@ -7,7 +7,12 @@ jobs:
   json:
     runs-on: macos-latest
     steps:
-      - uses: actions/checkout@v4  # Updated to v4
+      - uses: actions/checkout@v4
+
+      # 1. Add this step to set up Homebrew and symlink your repository as a tap
+      - name: Set up Homebrew
+        id: set-up-homebrew
+        uses: Homebrew/actions/setup-homebrew@master
 
       - name: brew info --json
         run: |
@@ -17,11 +22,16 @@ jobs:
           find . -type f -name "*.rb" | while read -r formula; do
             # Remove leading './' from the formula path
             formula="${formula#./}"
+            
+            # Extract just the name of the formula (e.g. getquotes or novalyn)
+            formula_name=$(basename "$formula" .rb)
+            
             # Create a nested directory structure in Info
             output_dir="../Info/$(dirname "$formula")"
             mkdir -p "$output_dir"
-            # Generate JSON and save it in the appropriate directory
-            brew info --json "$formula" | jq '.[0]? // .' > "../Info/${formula/%rb/json}"
+            
+            # 2. Query using the tap syntax: <owner>/<repo>/<formula>
+            brew info --json "MuntasirSZN/programs/$formula_name" | jq '.[0]? // .' > "../Info/${formula/%rb/json}"
           done
 
       - uses: stefanzweifel/git-auto-commit-action@v4.1.1
