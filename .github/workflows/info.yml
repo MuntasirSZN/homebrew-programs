@@ -34,7 +34,7 @@ jobs:
             brew info --json "MuntasirSZN/programs/$formula_name" | jq '.[0]? // .' > "../Info/${formula/%rb/json}"
           done
 
-      - uses: stefanzweifel/git-auto-commit-action@v4.1.1
+      - uses: stefanzweifel/git-auto-commit-action@v7
         with:
           commit_message: 'Generated formula JSON: `brew info --json <formula>`'
           file_pattern: Info
