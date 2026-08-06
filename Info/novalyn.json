@@ -22,6 +22,7 @@
       "checksum": "1574d5829cf6aeb95f3c4c6f947b99296b04ca0d1a65395d5d9a434f7fbc3826"
     }
   },
+  "patches": [],
   "revision": 0,
   "version_scheme": 0,
   "compatibility_version": null,
@@ -64,7 +65,7 @@
   "post_install_steps": [],
   "post_install_defined": false,
   "service": null,
-  "tap_git_head": "a01861ed89f816bc0cbb06998e4b7bbfb0273e13",
+  "tap_git_head": "5cb463657c130393f1b2931edc6d3c08af910444",
   "ruby_source_path": "Formula/novalyn.rb",
   "ruby_source_checksum": {
     "sha256": "17af60b97819ba616a9e187a889b2232af906d23cd613a7d483c63d4c5eca445"

@@ -9,19 +9,20 @@
   "license": "MIT",
   "homepage": "https://github.com/MuntasirSZN/getquotes",
   "versions": {
-    "stable": "0.7.2",
+    "stable": "0.7.3",
     "head": null,
     "bottle": false
   },
   "urls": {
     "stable": {
-      "url": "https://github.com/MuntasirSZN/getquotes/releases/download/v0.7.2/getquotes-aarch64-apple-darwin.tar.gz",
+      "url": "https://github.com/MuntasirSZN/getquotes/releases/download/v0.7.3/getquotes-aarch64-apple-darwin.tar.gz",
       "tag": null,
       "revision": null,
       "using": null,
-      "checksum": "19a8b6f920f4237385321ae6d92a709865bf226fdef229e0203dde05f1bc843b"
+      "checksum": "4d7d6b81d0a8cec0964f9d5342c2b4689cb1c69e0952f7fe61f1c07042e44c16"
     }
   },
+  "patches": [],
   "revision": 0,
   "version_scheme": 0,
   "compatibility_version": null,
@@ -64,9 +65,9 @@
   "post_install_steps": [],
   "post_install_defined": false,
   "service": null,
-  "tap_git_head": "a01861ed89f816bc0cbb06998e4b7bbfb0273e13",
+  "tap_git_head": "5cb463657c130393f1b2931edc6d3c08af910444",
   "ruby_source_path": "Formula/g/getquotes.rb",
   "ruby_source_checksum": {
-    "sha256": "460f6c9cc967bed76541241bace082ee30282b0f67e55ec8febefa2f06f013a6"
+    "sha256": "a3d07f18489a1ffb47b0305bc65f7d94c9d6fca703ef8f26bfc2ffe4e145c38f"
   }
 }
